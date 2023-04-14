@@ -1,5 +1,5 @@
 {
-  "name": "tpnode1",
+  "name": "tp_node",
   "version": "1.0.0",
   "description": "primer tp node",
   "main": "index.js",
@@ -8,9 +8,5 @@
   },
   "type": "module",
   "author": "yo",
-  "license": "ISC",
-  "dependencies": {
-    "country-codes-list": "^1.6.10",
-    "country-currency": "^1.0.1"
-  }
+  "license": "ISC"
 }
