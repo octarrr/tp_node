@@ -10,7 +10,7 @@ export function parsearUrl(s) {
             "parametros": (u.searchParams)
         }
     } catch (error) {
-        console.log("url invalida")
-        return -1
+        console.log(error)
+        return null
     }
 }
