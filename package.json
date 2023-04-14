@@ -8,5 +8,9 @@
   },
   "type": "module",
   "author": "yo",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "country-codes-list": "^1.6.10",
+    "country-currency": "^1.0.1"
+  }
 }
