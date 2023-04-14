@@ -1,0 +1,11 @@
+{
+  "name": "tpnode1",
+  "version": "1.0.0",
+  "description": "primer tp node",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "yo",
+  "license": "ISC"
+}
