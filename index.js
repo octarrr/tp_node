@@ -10,7 +10,11 @@ const s2 = "ORT"
 console.log("Texto de entrada: ", s1, 'y', s2)
 console.log("Texto de salida: ", concat_invert(s1,s2));
 
-console.log(new Alumno("juan", 123))
+let a = new Alumno("juan", 12345678)
+let b = new Alumno("pepe", 87654321)
+
+a.mostrar()
+b.mostrar()
 
 console.log("suma(1, 6) = ", matematica.suma(1, 6))
 console.log("resta(8, 2) = ", matematica.resta(8, 2))
