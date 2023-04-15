@@ -3,6 +3,7 @@ import * as matematica from "./modulo_matematica.js"
 import {Alumno} from "./Alumno.js"
 import {copiar} from "./modulo_manejofs.js"
 import {parsearUrl} from "./modulo_url.js"
+import {obtener_moneda} from "./modulo_paises.js"
 
 const s1 = "Escuela"
 const s2 = "ORT"
@@ -12,7 +13,6 @@ console.log("Texto de salida: ", concat_invert(s1,s2));
 
 let a = new Alumno("juan", 12345678)
 let b = new Alumno("pepe", 87654321)
-
 a.mostrar()
 b.mostrar()
 
@@ -24,3 +24,13 @@ console.log("area_circulo(10) = ", matematica.area_circulo(10))
 copiar("./t1.txt", "./t2.txt")
 
 console.log(parsearUrl("asdU"))
+
+let monedaDelPais, codigoPais;
+
+codigoPais = 'AR';
+monedaDelPais = obtener_moneda(codigoPais);
+console.log(`La moneda del país ${codigoPais} es: ${monedaDelPais}`);
+
+codigoPais = 'UZA';
+monedaDelPais = obtener_moneda(codigoPais);
+console.log(`La moneda del país ${codigoPais} es: ${monedaDelPais}`);

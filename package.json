@@ -8,5 +8,8 @@
   },
   "type": "module",
   "author": "yo",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "country-codes-list": "^1.6.10"
+  }
 }
