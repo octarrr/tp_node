@@ -4,6 +4,8 @@ import {Alumno} from "./Alumno.js"
 import {copiar} from "./modulo_manejofs.js"
 import {parsearUrl} from "./modulo_url.js"
 import {obtener_moneda} from "./modulo_paises.js"
+import sql from "mssql"
+import {dbconfig} from "dotenv"
 
 const s1 = "Escuela"
 const s2 = "ORT"
@@ -34,3 +36,9 @@ console.log(`La moneda del país ${codigoPais} es: ${monedaDelPais}`);
 codigoPais = 'UZA';
 monedaDelPais = obtener_moneda(codigoPais);
 console.log(`La moneda del país ${codigoPais} es: ${monedaDelPais}`);
+
+let id = 1
+let pool = await sql.connect(dbconfig);
+let result = await pool.request().input("pId", sql.Int, id).query("SELECT * FROM Pizzas WHERE Id=@pId");
+
+console.log(result);
