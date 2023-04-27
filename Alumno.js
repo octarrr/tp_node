@@ -7,3 +7,4 @@ export class Alumno {
         console.log("nombre: ", this.nombre, '\n', "DNI: ", this.dni)
     }
 }
+//asdasd
