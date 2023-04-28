@@ -10,6 +10,8 @@
   "author": "yo",
   "license": "ISC",
   "dependencies": {
-    "country-codes-list": "^1.6.10"
+    "country-codes-list": "^1.6.10",
+    "dotenv": "^16.0.3",
+    "mssql": "^9.1.1"
   }
 }
